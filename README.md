@@ -21,11 +21,11 @@
 
 * "Drag and drop" efficency is directly proportional to developer screen size
 
-* Xcode is very slow on rendering storyboard
+* Rendering storyboard is very slow on Xcode
 
-* Dynamic changing UI through User action is very common
+* UI dynamic changes from user action is common
 
-* Mixing Static(via IB) & Dynamic(via Code) makes project inconsistent and not predictable
+* Mixing Static(via IB) & Dynamic(via Code) makes project inconsistent and unpredictable
 
 * Impossible to preview Dynamic UI
 
@@ -47,8 +47,8 @@
 ## What can you experience if a project is easy to maintain?
 * Consistent
 * Predictable
-* Codes are easy to add/ modify/ delete/ merge
-* Easy to refactor
+* Codes are easy to be added/ modified/ deleted/ merged
+* Refactor easily
 * Most of the human error can be captured by compiler
 * 一個完全唔關事（識寫 Code 但唔識寫 iOS) 嘅人都可以輕鬆走入黎幫手
 
@@ -56,7 +56,7 @@
 
 ## How do our patterns solve?
 
-* We use `RxSwift` consistently to handle all the events that emitted from a View.
+* We use `RxSwift` consistently to handle all the events that being emitted from a View.
 `RxSwift` simplifies how we handle events (but high learning curve).
 
 * We strictly decouple all views in a `DraglessUIKit`. All views are portable to other projects.
